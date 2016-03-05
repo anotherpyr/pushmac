@@ -1,0 +1,9 @@
+# List of commands sent to / from pytivo that can be used to track status
+GET
+Queued
+Start sending
+# Should save off stderr responses and files associated with them
+# To Do
+# 1) Use config file for information that can be installation specific
+# 2) Move files to completed directory once uploaded
+# 3) Add option to reattempt pytivo upload for files that failed (move them to failed directory?) (Or we could just do this anyway)

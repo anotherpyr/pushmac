@@ -6,7 +6,7 @@ import ctypes
 
 from subprocess import Popen, PIPE, STDOUT, call
 
-ctypes.windll.kernel32.SetConsoleTitleA("pushCast Console")
+#ctypes.windll.kernel32.SetConsoleTitleA("pushCast Console")
 
 ## Variable Defaults ##
 myVer = 'v0.1'
@@ -167,6 +167,6 @@ def exec_menu(choice):
 	main_menu()
 	
 ## Main Loop ##	
-pyTivo("start")
-autoPush("start")
+#pyTivo("start")
+#autoPush("start")
 main_menu()
