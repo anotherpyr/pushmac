@@ -1,4 +1,4 @@
-# List of commands sent to / from pytivo that can be used to track status
+# List of additional commands sent to / from pytivo that can be used to track status
 GET
 Queued
 Start sending
@@ -7,3 +7,30 @@ Start sending
 # 1) Use config file for information that can be installation specific
 # 2) Move files to completed directory once uploaded
 # 3) Add option to reattempt pytivo upload for files that failed (move them to failed directory?) (Or we could just do this anyway)
+
+ConfigFile
+[gPodder]
+downloads - download directory
+database - gpodder database for metadata
+app - the mac gpodder ap
+lib - library
+data - data
+cmd - gpo command that does the work
+
+[pyTivo]
+cmd - pytivo command
+location - pytivo home
+config - pytivo config
+host - hostname (should be localhost)
+port - pytivo port
+container(s) - The containers to upload from, I only use 1 currently but maybe I should support more?
+tsn(s) - The tivo to send uploads.  Multiple tivo support?
+
+[python]
+cmd
+home
+path
+
+[pushcast]
+successdir - move good uploads here
+errordir - move failed uploads here
